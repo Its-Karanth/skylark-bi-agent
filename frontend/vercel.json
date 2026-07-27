@@ -1,0 +1,16 @@
+{
+  "rewrites": [
+    {
+      "source": "/api/:path*",
+      "destination": "https://YOUR-BACKEND-RENDER-URL.onrender.com/api/:path*"
+    },
+    {
+      "source": "/health",
+      "destination": "https://YOUR-BACKEND-RENDER-URL.onrender.com/health"
+    },
+    {
+      "source": "/(.*)",
+      "destination": "/index.html"
+    }
+  ]
+}
